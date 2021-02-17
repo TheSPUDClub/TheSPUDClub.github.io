@@ -1,0 +1,21 @@
+.collapse > .collapse-header {
+  cursor: pointer;
+}
+
+.collapse.open > .collapse-header {
+  background-color: #22252b
+}
+.collapse.open > .collapse-body {
+  overflow: visible;
+}
+
+.collapse > .collapse-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.collapse > .collapse-header > .material-icons {
+  font-size: 1rem;
+  font-weight: bold;
+}
